@@ -1,0 +1,54 @@
+/* Write your CSS here. */
+.scoreBoard {
+    display: flex;
+    font-family: monospace;
+    justify-content: space-between;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    top: 0;
+}
+
+.scoreBoard h1:nth-of-type(1) {
+    margin-left: 10px;
+}
+
+.scoreBoard h1:nth-of-type(2) {
+    margin-right: 10px;
+}
+
+.pf {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.wgs {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 241px;
+    width: 320px;
+}
+
+.wgs__mole-head {
+    position: absolute;
+    height: 178px;
+    width: 188px;
+    left: 55px;
+    top: 0;
+    transition-property: margin-top;
+    transition-duration: 0.25s;
+}
+
+.wgs__dirt-pile {
+    position: absolute;
+    height: 110px;
+    width: 320px;
+    bottom: 0;
+    left: 0;
+}
+
+.wgs__mole-head--hidden {
+    margin-top: 241px;
+}
